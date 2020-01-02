@@ -8,7 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class SpringSecurityJwtApplication {
-
 	public static void main(String[] args) throws JsonProcessingException {
 		SpringApplication.run(SpringSecurityJwtApplication.class, args);
 		AuthenticationRequest authenticationRequest = new AuthenticationRequest();
@@ -16,5 +15,4 @@ public class SpringSecurityJwtApplication {
 		authenticationRequest.setPassword("foo");
 		System.out.println(new ObjectMapper().writeValueAsString(authenticationRequest));
 	}
-
 }
